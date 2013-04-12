@@ -12,8 +12,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E287922E-D07F-4FC6-8C05-D98858046F82}.Local|PHP 5.2.ActiveCfg = Local|PHP 5.2
 		{E287922E-D07F-4FC6-8C05-D98858046F82}.Local|PHP 5.2.Deploy.0 = Local|PHP 5.2
-		{E287922E-D07F-4FC6-8C05-D98858046F82}.Production|PHP 5.2.ActiveCfg = Production|PHP 5.2
-		{E287922E-D07F-4FC6-8C05-D98858046F82}.Production|PHP 5.2.Deploy.0 = Production|PHP 5.2
+		{E287922E-D07F-4FC6-8C05-D98858046F82}.Production|PHP 5.2.ActiveCfg = Local|PHP 5.2
+		{E287922E-D07F-4FC6-8C05-D98858046F82}.Production|PHP 5.2.Deploy.0 = Local|PHP 5.2
 		{E287922E-D07F-4FC6-8C05-D98858046F82}.Staging|PHP 5.2.ActiveCfg = Staging|PHP 5.2
 		{E287922E-D07F-4FC6-8C05-D98858046F82}.Staging|PHP 5.2.Deploy.0 = Staging|PHP 5.2
 	EndGlobalSection
