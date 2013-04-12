@@ -1,5 +1,7 @@
 <?php
 
+//phpinfo();
+
 require_once "PlayersInput.php";
 require_once "PlayersOutput.php";
 
