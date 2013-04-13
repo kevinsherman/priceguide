@@ -15,6 +15,7 @@ require_once "CSVResultsFormatter.php";
 require_once "HTMLResultsFormatter.php";
 require_once "ProgressUpdater.php";
 
+
 if (!needToLoadForm())
 {
    $debugMode = ($_GET["debug"] == "Y");
@@ -424,14 +425,14 @@ league configurations.</p>
    <option value="Y">Yahoo!</option>
    <option value="C" selected="selected">Custom</option>
 </select><br class="clear" />
-<label class="wide">Number of teams:</label><input type="text" id="t" name="t" value="12" size="2" /><br class="clear" />
+<label class="wide">Number of teams:</label><input type="text" id="t" name="t" value="11" size="2" /><br class="clear" />
 <label class="wide">League:</label>
 <select id="l" name="l">
-   <option value="MLB" selected="selected">MLB</option>
-   <option value="AL">AL</option>
+   <option value="MLB">MLB</option>
+   <option value="AL" selected="selected">AL</option>
    <option value="NL">NL</option>
 </select><br class="clear" />
-<label class="wide">$ per team:</label><input type="text" id="m" name="m" value="260" size="3" /><br class="clear" />
+<label class="wide">$ per team:</label><input type="text" id="m" name="m" value="270" size="3" /><br class="clear" />
 <label class="wide">Minimum bid:</label><input type="text" id="b" name="b" value="1" size="3" /><br class="clear" />
 <label class="wide">Data source:</label>
 <select name="ds">
@@ -443,10 +444,11 @@ league configurations.</p>
    }
    else
    {
-      print "<option value=\"13S\" selected=\"selected\">2013 Stats</option>";
+      print "<option value=\"13E\" selected=\"selected\">2013 Steamer</option>";
    }
 ?>                                      
    <option value="134">2013 Composite</option>
+   <option value="13S">2013 Stats</option>
    <option value="13C">2013 CAIRO</option>
    <option value="13E">2013 Steamer</option>
    <option value="12S">2012 Stats</option>
@@ -501,7 +503,7 @@ league configurations.</p>
       <label><span class="narrow"><input type="checkbox" name="SB" value="Y" checked="checked" /></span> SB</label><br class="clear"/>
       <label><span class="narrow"><input type="checkbox" name="OBP" value="Y" /></span> OBP</label><br class="clear"/>
       <label><span class="narrow"><input type="checkbox" name="SLG" value="Y" /></span> SLG</label><br class="clear"/>
-      <label><span class="narrow"><input type="checkbox" name="OPS" value="Y" /></span> OPS</label><br class="clear"/>
+      <label><span class="narrow"><input type="checkbox" name="OPS" value="Y" checked="checked" /></span> OPS</label><br class="clear"/>
       <label><span class="narrow"><input type="checkbox" name="H" value="Y" /></span> H</label><br class="clear"/>
       <label><span class="narrow"><input type="checkbox" name="BB" value="Y" /></span> BB</label><br class="clear"/>
       <label><span class="narrow"><input type="checkbox" name="SI" value="Y" /></span> 1B</label><br class="clear"/>
@@ -544,7 +546,7 @@ league configurations.</p>
       <label><span class="narrow"><input type="checkbox" name="BB9" value="Y" /></span> BB/9</label><br class="clear"/>
       <label><span class="narrow"><input type="checkbox" name="HR9" value="Y" /></span> HR/9</label><br class="clear"/>
       <label><span class="narrow"><input type="checkbox" name="W%" value="Y" /></span> W%</label><br class="clear"/>
-      <label><span class="narrow"><input type="checkbox" name="IP" value="Y" /></span> IP</label><br class="clear"/>
+      <label><span class="narrow"><input type="checkbox" name="IP" value="Y" checked="checked" /></span> IP</label><br class="clear"/>
       <label><span class="narrow"><input type="checkbox" name="K-BB" value="Y" /></span> K - BB</label><br class="clear"/>
       <label><span class="narrow"><input type="checkbox" name="BAA" value="Y" /></span> BAA</label><br class="clear"/>
       <label><span class="narrow"><input type="checkbox" name="G" value="Y" /></span> G</label><br class="clear"/>
@@ -586,11 +588,11 @@ league configurations.</p>
 <div id="pitcher_pos">
    <div class="item_head">Pitching Positions</div>
    <div class="item">
-      <span class="narrow"><input type="text" id="SP" name="SP" value="6" size="1" /></span> SP<br class="clear"/>
-      <span class="narrow"><input type="text" id="RP" name="RP" value="3" size="1" /></span> RP<br class="clear"/>
-      <span class="narrow"><input type="text" id="P" name="P" value="0" size="1" /></span> P<br class="clear"/>
-      <span class="narrow"><input type="text" id="ms" name="ms" value="5" size="1" /></span> starts to qualify as SP<br class="clear"/>
-      <span class="narrow"><input type="text" id="mr" name="mr" value="5" size="1" /></span> relief appearances to qualify as RP<br class="clear"/>
+      <span class="narrow"><input type="text" id="SP" name="SP" value="0" size="1" /></span> SP<br class="clear"/>
+      <span class="narrow"><input type="text" id="RP" name="RP" value="0" size="1" /></span> RP<br class="clear"/>
+      <span class="narrow"><input type="text" id="P" name="P" value="10" size="1" /></span> P<br class="clear"/>
+      <span class="narrow"><input type="text" id="ms" name="ms" value="0" size="1" /></span> starts to qualify as SP<br class="clear"/>
+      <span class="narrow"><input type="text" id="mr" name="mr" value="0" size="1" /></span> relief appearances to qualify as RP<br class="clear"/>
    </div>
 </div>
 
