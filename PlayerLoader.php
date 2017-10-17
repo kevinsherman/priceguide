@@ -466,6 +466,16 @@ class PlayerLoader
                $handle = fopen("stats/2013PitchingComposite411.csv", "r");
             }
             break;
+         case "999":
+            if ($playerType == "Hitters")
+            {
+               $handle = fopen("stats/201704BattingBHQ.csv", "r");
+            }
+            else
+            {
+               $handle = fopen("stats/2013PitchingComposite411.csv", "r");
+            }
+            break;
          default:
             if ($playerType == "Hitters")
             {

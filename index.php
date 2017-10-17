@@ -447,6 +447,7 @@ league configurations.</p>
       print "<option value=\"13E\" selected=\"selected\">2013 Steamer</option>";
    }
 ?>                                      
+   <option value="999">2017 Draft BHQ</option>
    <option value="134">2013 Composite</option>
    <option value="13S">2013 Stats</option>
    <option value="13C">2013 CAIRO</option>
