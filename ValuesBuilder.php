@@ -718,7 +718,7 @@ class ValuesBuilder
       foreach ($players as &$player)
       {
          $OBPDenominator = $this->addArray($player, array("AB", "BB", "HBP", "SF"));
-         $player["xOPS"] = ($OBPDenominator + $player["AB"]) * ($player["OPS"] - $overallAverage);
+         $player["xOPS"] = ($OBPDenominator /*+ $player["AB"] */) * ($player["OPS"] - $overallAverage);
       }
    }
 
