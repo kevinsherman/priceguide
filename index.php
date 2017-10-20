@@ -425,7 +425,7 @@ league configurations.</p>
    <option value="Y">Yahoo!</option>
    <option value="C" selected="selected">Custom</option>
 </select><br class="clear" />
-<label class="wide">Number of teams:</label><input type="text" id="t" name="t" value="11" size="2" /><br class="clear" />
+<label class="wide">Number of teams:</label><input type="text" id="t" name="t" value="10" size="2" /><br class="clear" />
 <label class="wide">League:</label>
 <select id="l" name="l">
    <option value="MLB">MLB</option>

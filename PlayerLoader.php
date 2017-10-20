@@ -889,6 +889,9 @@ class PlayerLoader
          }
          if ($playerType == "Hitters")
          {
+            if ($player["mlbamID"] == 456030) {
+               return true;
+            }
             $player["pos"][] = "Util";
          }
          else
@@ -902,7 +905,9 @@ class PlayerLoader
    {
       for ($i = count($players) - 1; $i > -1; $i--)
       {
-         if (($players[$i]["league"] != $league) && ($players[$i]["league"]))
+         // if (($players[$i]["league"] != $league) && ($players[$i]["league"]))
+         // the above (original implementation does not remove BLANKS from the league - we want 307 AL ONLY, not 330 AL plus BLANK)
+         if (($players[$i]["league"] != $league))
          {
             unset($players[$i]);
          }
